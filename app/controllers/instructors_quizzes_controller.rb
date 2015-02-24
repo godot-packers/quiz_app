@@ -19,10 +19,10 @@ class InstructorsQuizzesController < ApplicationController
 
   def new
     @instructors_quiz = Quiz.new
-    # 3.times do
+    3.times do
       question= @instructors_quiz.questions.build
       4.times { question.answers.build }
-    # end
+    end
   end
 
   def quiz_params
